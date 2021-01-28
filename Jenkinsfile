@@ -14,9 +14,9 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("<ldeept>/train-schedule")
+                    app = docker.build("ldeept/train-schedule")
                     app.inside {
-                        sh 'echo $(curl 34.227.57.55:8080)'
+                        sh 'echo $(curl 3.82.121.47:8080)'
                     }
                 }
             }
